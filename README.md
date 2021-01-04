@@ -6,34 +6,34 @@
 ## 명령어
 
 ### remote 확인하기
-- `git remote -v`
+> `git remote -v`
 
 ### config 확인하기
-- `git config --list`
+> `git config --list`
 
 ### 현 상태 확인하기
-- `git status`
+> `git status`
 
 ### 커밋 목록 확인하기
-- `git log`
+> `git log`
 
 ### config 설정
-- 이름 설정 : `git config --global user.name '이름'`
-- Email 설정 : `git config --global user.email '이메일'`
+> 이름 설정 : `git config --global user.name '이름'`
+> Email 설정 : `git config --global user.email '이메일'`
 
 ### Stage로 add 하기
-- 파일을 지정해서 add : `git add '파일명'`
-- 모든 변동 파일 add : `git add --all` , `git add *`
+> 파일을 지정해서 add : `git add '파일명'`
+> 모든 변동 파일 add : `git add --all` , `git add *`
 
 ### commit 하기
-- `git commit -m '메시지'`
-- 커밋 메시지 수정 : `git commit --amend`
+> `git commit -m '메시지'`
+> 커밋 메시지 수정 : `git commit --amend`
 
 ### add 취소하기 (Unstaged로 변경)
-- `git reset HEAD`
+> `git reset HEAD`
 
 ### commit 취소하기
-- `git reset --hard HEAD^`
+> `git reset --hard HEAD^`
 
 
 <br>
