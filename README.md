@@ -5,8 +5,18 @@
 
 ## ⚙️ 명령어
 
+### Pull 하기
+```
+> git pull origin [브랜치]
+```
+
+### Clone 하기
+```
+> git clone [저장소 주소]
+```
+
 ### remote 확인하기
-```git
+```
 > git remote -v
 ```
 
