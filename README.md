@@ -68,6 +68,9 @@ Email 설정 : > git config --global user.email '이메일'
 
 ## 참고 사이트
 
+### Git 아이콘
+- https://shields.io/
+
 ### 이모티콘 사용
 - https://wepplication.github.io/tools/charMap/#emoji
 - https://www.emojicopy.com/
