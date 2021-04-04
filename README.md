@@ -3,8 +3,8 @@
 
 ## 링크
 
-- [Git 메모](/git.md)
-- [Docker 메모](/docker.md)
-- [Linux 메모](/linux.md)
-- [Django 메모](/django.md)
-- [MySQL 메모](/mysql.md)
+- [Git](/git.md)
+- [Docker](/docker.md)
+- [Linux](/linux.md)
+- [Django](/django.md)
+- [MySQL](/mysql.md)
