@@ -12,6 +12,7 @@
 
 ### DB 덤프파일(sql) export 
 ```
+1. sql 파일을 export로 원하는 위치에서 터미널을 연 후 명령어 실행
 > mysqldump -u root -p 'DB 이름' > 'DB 이름'.sql
 ```
 
