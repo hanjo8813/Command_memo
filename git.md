@@ -37,20 +37,25 @@
 
 ### config 설정
 ```
-이름 설정 : > git config --global user.name '이름'
-Email 설정 : > git config --global user.email '이메일'
+# 이름 설정
+> git config --global user.name '이름'
+# Email 설정
+> git config --global user.email '이메일'
 ```
 
 ### Stage로 add 하기
 ```
-파일을 지정해서 add : > git add '파일명'
-모든 변동 파일 add : > git add --all , git add *
+# 파일을 지정해서 add
+> git add '파일명'
+# 모든 변동 파일 add
+> git add --all , git add *
 ```
 
 ### commit 하기
 ```
 > git commit -m '메시지'
-커밋 메시지 수정 : > git commit --amend
+# 커밋 메시지 수정
+> git commit --amend
 ```
 
 ### add 취소하기 (Unstaged로 변경)

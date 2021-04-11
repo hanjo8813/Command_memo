@@ -26,15 +26,21 @@
 > python -m django --version
 ```
 
-### static 파일
+### 서버 실행
 ```
-> python manage.py collectstatic
+> python manage.py runserver
 ```
 
 ### DB 테이블 모델링
 ```
 > python manage.py inspectdb
 ```
+
+### (배포용) static 파일 모아서 생성
+```
+> python manage.py collectstatic
+```
+
 
 <br>
 
