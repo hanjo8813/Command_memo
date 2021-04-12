@@ -21,11 +21,6 @@
 > python manage.py startapp '앱이름'
 ```
 
-### 장고 버전 보기
-```
-> python -m django --version
-```
-
 ### 서버 실행
 ```
 > python manage.py runserver
