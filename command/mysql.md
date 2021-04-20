@@ -1,5 +1,4 @@
-# < MySQL Memo >
-### MySQL 명령어와 참고 사이트 메모
+# < MySQL >
 
 <br>
 
