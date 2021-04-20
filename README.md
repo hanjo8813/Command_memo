@@ -6,6 +6,7 @@
 ## 개발 지식 메모
 
 - [개발용어](/dev_info/dev_word.md)
+- [버전 표기법](/dev_info/w_version.md)
 
 ## 명령어 메모
 
