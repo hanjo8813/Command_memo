@@ -5,7 +5,7 @@
 
 ## 개발 지식 메모
 
-- [개발용어](/dev_word.md)
+- [개발용어](/dev_info/dev_word.md)
 
 ## 명령어 메모
 
