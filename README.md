@@ -5,7 +5,9 @@
 
 ## 개발 지식 메모
 
-- [개발용어](/dev_info/dev_word.md)
+- [렌더링 방식](/dev_info/rendering.md)
+- [디자인 패턴](/dev_info/d_pattern.md)
+- [CI/CD](/dev_info/cicd.md)
 - [버전 표기법](/dev_info/w_version.md)
 
 ## 명령어 메모
