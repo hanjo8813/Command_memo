@@ -1,4 +1,4 @@
-## 버전표기법
+## 버전 표기법
 
 `Major Version` . `Minor Version` . `Build` or `Maintenance Version`
 > ex) 2.1.1
@@ -7,5 +7,10 @@
 2. `Minor Version`  : 0으로 시작해서 없던 기능의 추가나 기존 기능의 수정 등의 변화가 발생했을때 이 수치를 올린다.
 3. `Build` or `Maintenance Version` : 자잘한 버그나 내부적 코드 보완 등의 변화가 발생했을때 이 수치를 올린다. 
 
-### 참고 링크
+<br>
+
+## 참고 링크
+
+### 버전 표기법
+
 - https://usinuniverse.bitbucket.io/blog/version.html
