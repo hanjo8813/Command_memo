@@ -67,6 +67,14 @@
 > git reset --hard HEAD^
 ```
 
+### 충돌무시 Pull
+```
+# pull 받는 저장소를 강제로 최신화 시킬때만 사용
+> git fetch --all
+> git reset --hard origin/master
+> git pull origin master
+```
+
 <br>
 
 ## 참고 사이트
