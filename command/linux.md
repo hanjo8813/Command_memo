@@ -59,8 +59,6 @@
 > sudo apt-get install nginx
 ```
 
-
-
 <br>
 
 ## 참고 사이트
