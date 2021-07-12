@@ -75,6 +75,11 @@
 > git pull origin master
 ```
 
+### git 캐시 삭제
+```
+> git rm -r --cached .
+```
+
 <br>
 
 ## 참고 사이트
