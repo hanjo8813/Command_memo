@@ -26,6 +26,16 @@
 > mysql -u root -p '생성한 DB 이름' < 'sql파일 이름'.sql
 ```
 
+### MySQL(ver 5.x) 비밀번호 변경
+```
+# mysql 내부에서 실행
+> use mysql;
+> select host, user, authentication from user;
+> update user set authentication_string=password('비번') where user='유저이름';
+> flush privileges;
+```
+
+
 <br>
 
 ## 참고 사이트

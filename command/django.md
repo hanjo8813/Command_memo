@@ -35,6 +35,15 @@
 > python manage.py collectstatic
 ```
 
+### Django crontab 사용
+```
+# django-crontab 라이브러리 설치 필수
+# 반드시 Django 세팅파일에 크론탭 등록 후 사용
+> python manage.py crontab show
+> python manage.py crontab add
+> python manage.py crontab remove
+```
+
 
 <br>
 
