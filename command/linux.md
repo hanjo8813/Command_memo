@@ -20,6 +20,16 @@
 > sudo apt-get dist-upgrade
 ```
 
+### TimeZone 설정
+```
+# 서버 시간 보기
+> date
+# 서버 timezone 보기
+> cat /etc/timezone
+# timezone 설정하기
+> sudo dpkg-reconfigure tzdata
+```
+
 <br>
 
 ## ⚙️ 설치 명령어
