@@ -3,13 +3,9 @@
 
 <br>
 
-## 개발 지식 메모
+## 그냥 메모
 
 - [기술 블로그 모음](/dev_info/기술블로그.md)
-- [렌더링 방식](/dev_info/rendering.md)
-- [디자인 패턴](/dev_info/d_pattern.md)
-- [CI/CD](/dev_info/cicd.md)
-- [버전 표기법](/dev_info/w_version.md)
 
 ## 명령어 메모
 
