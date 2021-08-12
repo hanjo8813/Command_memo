@@ -62,8 +62,6 @@
 
 ## 참고 사이트
 
-### Docker 허브를 이용한 원격 이미지 저장소
-- https://arisu1000.tistory.com/27802
+### Docker 설치법
+- https://goddaehee.tistory.com/251
 
-### Docker로 배포하기
-- https://velog.io/@devmin/Docker-deployment

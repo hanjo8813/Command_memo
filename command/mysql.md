@@ -2,6 +2,78 @@
 
 <br>
 
+## DDL 기본문법
+
+### CREATE
+
+```sql
+CREATE TABLE 테이블명(
+  필드명 타입 NOT NULL AUTO_INCREMENT DEFAULT 값,
+  PRIMARY KEY(필드명),
+  FOREIGN KEY(필드명) REFERENCES 테이블명(필드명)
+);
+```
+
+### DROP TABLE
+```sql
+DROP TABLE [IF 조건] 테이블명;
+```
+
+### ALTER (ADD/ALTER)
+
+```sql
+ALTER TABLE 테이블명
+[ADD/ALTER] 필드명 타입 옵션...;
+```
+
+### ALTER(DROP COLUMN)
+
+```sql
+ALTER TABLE 테이블명
+DROP COLUMN 필드명 [CASCADE];
+```
+
+<br>
+
+## DML 기본문법
+
+### SELECT
+
+```sql
+SELECT [DISTINCT] 필드명
+FROM 테이블명
+JOIN 필드명 ON 기준설정(키값매핑)
+WHERE 조건
+GROUP BY 필드명1, 필드명2
+ORDER BY 필드명 [ASC|DESC]
+LIMIT N ;
+```
+
+### INSERT INTO
+
+```sql
+INSERT INTO 테이블명(필드명, ...)
+VALUES (데이터, ...);
+```
+
+### DELETE
+
+```sql
+DELETE FROM 테이블명
+WHERE 조건;
+```
+
+### UPDATE
+
+```sql
+UPDATE 테이블명
+SET 필드명 = 데이터,
+    ...
+WHERE 조건;
+```
+
+<br>
+
 ## ⚙️ 명령어
 
 ### 외부 DB 접속
@@ -34,7 +106,6 @@
 > update user set authentication_string=password('비번') where user='유저이름';
 > flush privileges;
 ```
-
 
 <br>
 
