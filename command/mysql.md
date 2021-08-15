@@ -9,8 +9,10 @@
 ```sql
 CREATE TABLE 테이블명(
   필드명 타입 NOT NULL AUTO_INCREMENT DEFAULT 값,
+  ...
   PRIMARY KEY(필드명),
-  FOREIGN KEY(필드명) REFERENCES 테이블명(필드명)
+  FOREIGN KEY(필드명) REFERENCES 테이블명(필드명),
+  INDEX 인덱스명(필드명)
 );
 ```
 
