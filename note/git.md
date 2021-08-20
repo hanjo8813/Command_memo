@@ -1,4 +1,4 @@
-# < Git >
+# Git 
 
 <br>
 
@@ -86,11 +86,6 @@
 
 ### Git 아이콘
 - https://shields.io/
-
-### 이모티콘 사용
-- https://wepplication.github.io/tools/charMap/#emoji
-- https://www.emojicopy.com/
-- https://favicon.io/emoji-favicons/
 
 ### git LFS 사용법
 - https://hwiyong.tistory.com/318
