@@ -8,12 +8,15 @@
 
 > 명령어나 문법이 기억 안날 때 찾는 Cheat Sheet
 
-- [Git](/command/git.md)
-- [Docker](/command/docker.md)
-- [Django](/command/django.md)
-- [node.js](/command/node.js.md)
-- [MySQL](/command/mysql.md)
-- [Linux](/command/linux.md)
+- [Java Collection](/note/java_collection.md)
+- [Spring](/note/spring.md)
+- [MySQL](/note/mysql.md)
+- [Python](/note/python.md)
+- [Django](/note/django.md)
+- [Git](/note/git.md)
+- [Docker](/note/docker.md)
+- [node.js](/note/node.js.md)
+- [Linux](/note/linux.md)
 
 ## 그냥 메모
 

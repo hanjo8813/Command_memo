@@ -5,23 +5,23 @@
 ## ⚙️ 기본 명령어
 
 ### 열린 포트 확인
-```
+```sh
 > netstat -tnlp
 ```
 
 ### 수정 권한 부여
-```
+```sh
 > sudo chmod -R 777 [파일or디렉토리]
 ```
 
 ### 패키지 업데이트
-```
+```sh
 > sudo apt-get update
 > sudo apt-get dist-upgrade
 ```
 
 ### TimeZone 설정
-```
+```sh
 # 서버 시간 보기
 > date
 # 서버 timezone 보기
@@ -35,14 +35,14 @@
 ## ⚙️ 설치 명령어
 
 ### Python 설치
-```
+```sh
 > sudo apt update
 > sudo apt-get install python-dev python3-dev
 > sudo apt install python3-pip
 ```
 
 ### node.js 설치
-```
+```sh
 > sudo apt-get install curl
 > curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
 > sudo bash nodesource_setup.sh 
@@ -51,7 +51,7 @@
 ```
 
 ### Docker 설치
-```
+```sh
 > sudo apt update
 > sudo apt install apt-transport-https
 > sudo apt install ca-certificates
@@ -65,7 +65,7 @@
 ```
 
 ### nginx 설치
-```
+```sh
 > sudo apt-get install nginx
 ```
 

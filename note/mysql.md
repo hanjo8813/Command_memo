@@ -79,18 +79,18 @@ WHERE 조건;
 ## ⚙️ 명령어
 
 ### 외부 DB 접속
-```
+```sh
 > mysql -u root -p --host '호스트 IP'
 ```
 
 ### DB 덤프파일(sql) export 
-```
+```sh
 # sql 파일을 export로 원하는 위치에서 터미널을 연 후 명령어 실행
 > mysqldump -u root -p 'DB 이름' > 'DB 이름'.sql
 ```
 
 ### DB 덤프파일(sql) import 
-```
+```sh
 # 1. 빈 DB(스키마) 생성
 > create database 'DB 이름'
 > quit
@@ -101,7 +101,7 @@ WHERE 조건;
 ```
 
 ### MySQL(ver 5.x) 비밀번호 변경
-```
+```sh
 # mysql 내부에서 실행
 > use mysql;
 > select host, user, authentication from user;
