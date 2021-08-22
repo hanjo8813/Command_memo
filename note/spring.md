@@ -28,4 +28,31 @@
 
 ### @PropertySource
 
+```java
+// properties를 사용하는 파일에 달아줘야함
+@PropertySource("application.properties")
+```
+
 ### @Value
+
+```java
+// 시스템 환경변수도 가져올 수 있음
+@Value("${프로퍼티 키값}")
+@Value("${키값 : 없을때넣을값}")
+```
+
+### @ConfigurationProperties
+
+```java
+// 프로퍼티 파일 계층을 입력하면 하위 데이터를 긁어온다
+@ConfigurationProperties(prefix = "카테고리")
+```
+
+### @Profile
+
+```java
+// 컴포넌트 파일에 달아줌
+@Profile("프로필명")
+// 여러개 지정 가능
+@Profile( {"프로필명", ... } )
+```
