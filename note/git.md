@@ -78,6 +78,8 @@
 ### git 캐시 삭제
 ```sh
 > git rm -r --cached .
+> git add .
+> git commit -m "어쩌구"
 ```
 
 <br>

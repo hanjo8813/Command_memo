@@ -2,8 +2,8 @@
 
 <br>
 
-## Annotation
-> 어노테이션 종류 정리
+## Basic Annotation
+> 기본 어노테이션 종류 정리
 
 ### @Configuration
 
@@ -29,8 +29,8 @@
 ### @PropertySource
 
 ```java
-// properties를 사용하는 파일에 달아줘야함
-@PropertySource("application.properties")
+// properties provider 클래스 만들때 사용
+@PropertySource("프로퍼티명.properties")
 ```
 
 ### @Value
@@ -56,3 +56,14 @@
 // 여러개 지정 가능
 @Profile( {"프로필명", ... } )
 ```
+
+<br>
+
+## Test Annotation
+> 테스트 어노테이션 종류 정리
+
+### @Test
+
+### @DisplayName
+
+### @Disabled
