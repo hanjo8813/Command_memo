@@ -26,20 +26,7 @@
 ...
 ```
 
-### @PropertySource
-
-```java
-// properties provider 클래스 만들때 사용
-@PropertySource("프로퍼티명.properties")
-```
-
-### @Value
-
-```java
-// 시스템 환경변수도 가져올 수 있음
-@Value("${프로퍼티 키값}")
-@Value("${키값 : 없을때넣을값}")
-```
+### @Autowired
 
 ### @ConfigurationProperties
 
@@ -57,6 +44,24 @@
 @Profile( {"프로필명", ... } )
 ```
 
+### @PropertySource
+
+```java
+// properties provider 클래스 만들때 사용
+@PropertySource("프로퍼티명.properties")
+```
+
+### @Value
+
+```java
+// 시스템 환경변수도 가져올 수 있음
+@Value("${프로퍼티 키값}")
+@Value("${키값 : 없을때넣을값}")
+```
+
+### @ActiveProfiles
+
+
 <br>
 
 ## Test Annotation
@@ -67,3 +72,14 @@
 ### @DisplayName
 
 ### @Disabled
+
+### @TestMethodOrder
+
+### @Order
+
+### @TestInstance
+
+### @SpringBootTest
+
+### @Before @BeforeAll @After @AfterAll
+

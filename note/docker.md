@@ -65,3 +65,6 @@
 ### Docker 설치법
 - https://goddaehee.tistory.com/251
 
+### Docker Desktop 오류
+
+- https://forums.docker.com/t/docker-failed-to-initialize/111341
