@@ -4,10 +4,11 @@
 
 <br>
 
-## Integer
+## Type 변환
 
 ### 메소드
 
+- `리스트.stream().mapToInt(i -> i).toArray()` : List -> Array
 - `Integer.toString(int변수)` : int를 String으로 변환
 - `Integer.parseInt(str변수)` : String을 int로 변환
 
@@ -42,6 +43,7 @@ String str = new String("");
 - `문자열1.concat(문자열2)` : 문자열 두개를 합침
 - `.replace(찾는문자, 바꿀문자)` : 문자열에서 입력 문자를 찾아서 바꿈
 - `.split(분리기준)` : 문자열을 기준대로 나누고 String 배열 반환
+- `.trip()`, `strip()` : 문자열 앞뒤 공백 제거
 
 <br>
 
