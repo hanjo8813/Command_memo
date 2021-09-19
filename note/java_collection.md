@@ -8,9 +8,10 @@
 
 ### 메소드
 
+- `Integer.toString(int변수)` : int -> String
+- `Integer.parseInt(str변수)` : String -> int
 - `리스트.stream().mapToInt(i -> i).toArray()` : List -> Array
-- `Integer.toString(int변수)` : int를 String으로 변환
-- `Integer.parseInt(str변수)` : String을 int로 변환
+
 
 <br>
 
@@ -44,6 +45,8 @@ String str = new String("");
 - `.replace(찾는문자, 바꿀문자)` : 문자열에서 입력 문자를 찾아서 바꿈
 - `.split(분리기준)` : 문자열을 기준대로 나누고 String 배열 반환
 - `.trip()`, `strip()` : 문자열 앞뒤 공백 제거
+- `.charAt(인덱스)` : 해당 문자열 인덱스에 해당하는 문자를 반환
+- `.toCharArray()` : 문자열을 char[]로 반환
 
 <br>
 
@@ -192,6 +195,8 @@ Map<'K자료형', 'V자료형'> '이름' = new HashMap<>();
 - `.containsKey(K)` : 해당 키가 들어있는지 확인후 bool값 반환
 - `.containsValue(V)` : 해당 값이 들어있는지 확인후 bool값 반환
 - `.replace(K, V)` : 해당 키의 값을 입력 값으로 바꿈
+- `.getOrDefault(K, Default)` : 해당 키가 Map에 존재한다면 키의 Value를, 없다면 Default 지정값 리턴 
+- `.merge(K, defaultV, (originV, defaultV) -> {} )` : (defaultdict와 비슷)
 
 <br>
 
