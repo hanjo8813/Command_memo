@@ -51,6 +51,7 @@
 - `for i, item in enumerate(iterable)` : 요소에 있는 인덱스까지 얻고 싶을때 사용
 - `zip(리스트, ...)` : 리스트의 같은 인덱스 요소들을 튜플로 묶어준다.
 - `sorted(iterable, key = 함수, reverse = bool)` : 해당 요소를 정렬하고 반환
+    - key 함수에 Comparator를 정의하는 경우 `functools.cmp_to_key(함수)`를 통해 변환해줘야함
 - `map(함수, iterable)` : 정의된 함수에 따라 해당 요소를 변환
 
 <br>

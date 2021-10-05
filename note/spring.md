@@ -3,7 +3,7 @@
 <br>
 
 ## Basic Annotation
-> 기본 어노테이션 종류 정리
+> 설정관련 어노테이션 종류 정리
 
 ### @Configuration
 
@@ -64,6 +64,28 @@
 
 <br>
 
+## HTTP Annotation
+> API관련 어노테이션 종류 정리
+
+### @RequestMapping
+
+```java
+@RequestMapping
+@GetMapping
+@PostMapping
+@DeleteMapping
+```
+
+### @RequestParam
+
+### @RequestBody
+
+### @PathVariable
+
+
+
+<br>
+
 ## Test Annotation
 > 테스트 어노테이션 종류 정리
 
@@ -83,3 +105,9 @@
 
 ### @Before @BeforeAll @After @AfterAll
 
+<br>
+
+## Lombok Annotation
+> Lombok 어노테이션 종류 정리
+
+### @Slf4j
