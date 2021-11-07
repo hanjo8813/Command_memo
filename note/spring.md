@@ -28,6 +28,10 @@
 
 ### @Autowired
 
+### @EntityScan
+
+### @EnableJpaRepositories
+
 ### @ConfigurationProperties
 
 ```java
@@ -59,13 +63,14 @@
 @Value("${키값 : 없을때넣을값}")
 ```
 
-### @ActiveProfiles
 
 
 <br>
 
 ## HTTP Annotation
 > API관련 어노테이션 종류 정리
+
+### @ModelAttribute
 
 ### @RequestMapping
 
@@ -83,11 +88,22 @@
 ### @PathVariable
 
 
-
 <br>
 
 ## Test Annotation
 > 테스트 어노테이션 종류 정리
+
+### @SpringBootTest
+
+### @TestInstance
+
+### @ActiveProfiles
+
+### @ExtendWith(MockitoExtension.class)
+
+### @AutoConfigureRestDocs
+
+### @AutoConfigureMockMvc
 
 ### @Test
 
@@ -99,15 +115,6 @@
 
 ### @Order
 
-### @TestInstance
-
-### @SpringBootTest
-
 ### @Before @BeforeAll @After @AfterAll
 
 <br>
-
-## Lombok Annotation
-> Lombok 어노테이션 종류 정리
-
-### @Slf4j

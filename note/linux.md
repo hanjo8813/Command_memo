@@ -104,6 +104,12 @@
 ```
 
 ### Docker 설치
+
+```sh
+sudo yum install docker
+sudo systemctl start docker
+```
+
 ```sh
 > sudo apt update
 > sudo apt install apt-transport-https
@@ -116,6 +122,8 @@
 > apt-cache policy docker-ce
 > sudo apt install docker-ce
 ```
+
+
 
 ### nginx 설치
 ```sh
