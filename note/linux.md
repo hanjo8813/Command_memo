@@ -57,78 +57,113 @@
 
 ## ⚙️ 자주 쓰는 명령어
 
-### 열린 포트 확인
+### 포트 조작
 ```sh
-> netstat -tnlp
+# 열린 포트 확인
+netstat -tnlp
+# 포트를 사용하는 프로세스 확인
+sudo lsof -i TCP:"포트번호"
+# 포트를 사용하는 프로세스 종료
+sudo fuser -k -n tcp "포트번호"
 ```
 
 ### 수정 권한 부여
 ```sh
-> sudo chmod -R 777 [파일or디렉토리]
+sudo chmod -R 777 [파일or디렉토리]
 ```
 
 ### 패키지 업데이트
 ```sh
-> sudo apt-get update
-> sudo apt-get dist-upgrade
+sudo apt-get update
+sudo apt-get dist-upgrade
 ```
 
 ### TimeZone 설정
 ```sh
 # 서버 시간 보기
-> date
+date
 # 서버 timezone 보기
-> cat /etc/timezone
+cat /etc/timezone
 # timezone 설정하기
-> sudo dpkg-reconfigure tzdata
+sudo dpkg-reconfigure tzdata
+```
+
+<br>
+
+## ⚙️ nginx 명령어
+
+### 시작
+```sh
+sudo nginx
+```
+
+### 종료
+```sh
+sudo nginx -s stop
+```
+
+### 재시작
+```sh
+sudo nginx -s reload
+sudo systemctl restart nginx
+```
+
+### 상태보기
+```sh
+sudo systemctl status nginx
 ```
 
 <br>
 
 ## ⚙️ 설치 명령어
 
+### nginx 설치
+```sh
+sudo apt-get install nginx
+```
+
+### Java 설치 
+```sh
+sudo apt install openjdk-"버전"-jdk
+```
+
+
 ### Python 설치
 ```sh
-> sudo apt update
-> sudo apt-get install python-dev python3-dev
-> sudo apt install python3-pip
+sudo apt update
+sudo apt-get install python-dev python3-dev
+sudo apt install python3-pip
 ```
 
 ### node.js 설치
 ```sh
-> sudo apt-get install curl
-> curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
-> sudo bash nodesource_setup.sh 
-> sudo apt-get install nodejs
-> sudo apt-get install build-essential
+sudo apt-get install curl
+curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh 
+sudo apt-get install nodejs
+sudo apt-get install build-essential
 ```
 
 ### Docker 설치
-
 ```sh
 sudo yum install docker
 sudo systemctl start docker
 ```
 
 ```sh
-> sudo apt update
-> sudo apt install apt-transport-https
-> sudo apt install ca-certificates
-> sudo apt install curl
-> sudo apt install software-properties-common
-> curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-> sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-> sudo apt update
-> apt-cache policy docker-ce
-> sudo apt install docker-ce
+sudo apt update
+sudo apt install apt-transport-https
+sudo apt install ca-certificates
+sudo apt install curl
+sudo apt install software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo apt update
+apt-cache policy docker-ce
+sudo apt install docker-ce
 ```
 
 
-
-### nginx 설치
-```sh
-> sudo apt-get install nginx
-```
 
 <br>
 
