@@ -115,6 +115,25 @@ sudo systemctl status nginx
 
 <br>
 
+## ⚙️ certbot 명령어
+
+### 발급받은 인증서 확인
+```sh
+sudo certbot certificates
+```
+
+### 재발급 가능 여부 검사
+```sh
+sudo certbot renew --dry-run
+```
+
+### 재발급
+```sh
+sudo certbot renew
+```
+
+<br>
+
 ## ⚙️ 설치 명령어
 
 ### nginx 설치
