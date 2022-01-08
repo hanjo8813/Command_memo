@@ -17,9 +17,3 @@
 - [Docker](/note/docker.md)
 - [node.js](/note/node.js.md)
 - [Linux](/note/linux.md)
-
-## 그냥 메모
-
-> 개발 관련 링크 모아놓기
-
-- [기술 블로그 모음](/dev_info/기술블로그.md)
