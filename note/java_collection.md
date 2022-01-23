@@ -97,6 +97,7 @@ import java.util.*;
 - `.size()` : 컬렉션의 크기를 반환
 - `.sort(객체, Comparable)` : 컬렉션 객체를 기준에 따라 정렬. Comparable 객체는 람다식으로 구현한다
 - `.reverseOrder()` : sort 나 다른 컬렉션의 초기 인자로 입력되는 메소드. 역으로 정렬해줌
+- `.max(컬렉션)`, `.min(컬렉션)` : iterator를 지원하는 컬렉션에서 최대, 최소 값을 반환해줌
 
 <br>
 
@@ -256,8 +257,12 @@ Queue<'자료형'> '이름' = new LinkedList<>();
 ### 기본
 
 ```java
-// 선언 + 할당
+// 우선순위가 낮은 숫자 순
 PriorityQueue<'자료형'> '이름' = new PriorityQueue<>();
+// 우선순위가 높은 숫자 순
+PriorityQueue<'자료형'> '이름' = new PriorityQueue<>(Collections.reverseOrder()));
+// 우선순위 직접 지정하기
+PriorityQueue<'자료형'> '이름' = new PriorityQueue<>(Comparator));
 ```
 
 - 우선순위 큐 / 내부는 힙으로 구현되어 있다. (프린트 찍어보면 트리구조로 나옴)
