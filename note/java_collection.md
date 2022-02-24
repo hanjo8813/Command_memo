@@ -12,7 +12,6 @@
 - `Integer.parseInt(str변수)` : String -> int
 - `리스트.stream().mapToInt(i -> i).toArray()` : List -> Array
 
-
 <br>
 
 ## String
@@ -50,6 +49,18 @@ String str = new String("");
 
 <br>
 
+## StringBuilder
+
+### 기본
+
+### 메소드
+
+
+
+
+
+<br>
+
 ## Arrays
 
 ### 기본
@@ -77,6 +88,7 @@ int[] arr = new int[]{1,2,3,4,5};
 - `Arrays.sort(배열)` : 입력 배열을 정렬해주는 메소드
 - `Arrays.copyOf(배열, 복사할 길이)` : 인덱스 0부터 0포함하는 길이만큼 복사한 배열을 반환
 - `Arrays.copyOfRange(배열, 시작인덱스, 끝인덱스)` : 시작인덱스(포함)부터 끝인덱스-1 까지 복사한 배열을 반환
+- `Arrays.equals(배열, 배열)` : 두 배열 내부요소까지 비교
 
 <br>
 
@@ -95,7 +107,8 @@ import java.util.*;
 ### 메소드
 
 - `.size()` : 컬렉션의 크기를 반환
-- `.sort(객체, Comparable)` : 컬렉션 객체를 기준에 따라 정렬. Comparable 객체는 람다식으로 구현한다
+- `.sort(컬렉션, Comparator)` : 컬렉션 객체를 기준에 따라 정렬. Comparator 객체는 람다식으로 구현한다
+- `.binarySearch(컬렉션, 찾을값)` : 해당 컬렉션에서 값을 이진탐색으로 찾는다
 - `.reverseOrder()` : sort 나 다른 컬렉션의 초기 인자로 입력되는 메소드. 역으로 정렬해줌
 - `.max(컬렉션)`, `.min(컬렉션)` : iterator를 지원하는 컬렉션에서 최대, 최소 값을 반환해줌
 
@@ -122,6 +135,7 @@ List<'자료형'> '이름' = new ArrayList<>('리스트');
 - `.remove(값or인덱스)` : 입력값이나 인덱스에 해당하는 값을 pop
 - `.get(인덱스)` : 인덱스에 해당하는 값을 출력
 - `.set(인덱스, 바꿀값)` : 인덱스의 값을 바꾸기
+- `.indexOf(값)` : 입력값에 해당하는 첫 인덱스 반환
 
 <br>
 
@@ -145,6 +159,47 @@ List<'자료형'> '이름' = new LinkedList<>('리스트');
 - ArrayList와 동일
 - `.addFirst(값)` : 가장 앞에 데이터 추가
 - `.addLast(값)` : 가장 뒤에 데이터 추가
+- Queue와 동일하게 `.peek()`, `.poll()` 메소드가 있음
+
+<br>
+
+
+## Queue
+
+### 기본
+
+```java
+// 선언 + 할당
+Queue<'자료형'> '이름' = new LinkedList<>();
+```
+
+- 큐. 연결리스트로 구현되어있고 인덱스로의 접근이 불가능하다. 
+
+### 메소드
+
+- `.add(값)` , `offer(값)` : 맨뒤에 값 추가
+- `.poll()` : 첫 번째 값을 제거하고 반환 (pop)
+- `.remove()` : 첫 번째 값을 제거 
+- `.peek()` : 첫 번째 값을 출력(삭제 X)
+- `.clear()` : 큐 초기화 (모두 삭제)
+
+<br>
+
+## PriorityQueue
+
+### 기본
+
+```java
+// 우선순위가 낮은 숫자 순
+PriorityQueue<'자료형'> '이름' = new PriorityQueue<>();
+// 우선순위가 높은 숫자 순
+PriorityQueue<'자료형'> '이름' = new PriorityQueue<>(Collections.reverseOrder()));
+// 우선순위 직접 지정하기
+PriorityQueue<'자료형'> '이름' = new PriorityQueue<>(Comparator));
+```
+
+- 우선순위 큐 / 내부는 힙으로 구현되어 있다. (프린트 찍어보면 트리구조로 나옴)
+- `Queue` 컬렉션의 메소드와 동일하다.
 
 <br>
 
@@ -231,42 +286,4 @@ LinkedHashMap<'K자료형', 'V자료형'> '이름' = new LinkedHashMap<>();
 
 <br>
 
-## Queue
-
-### 기본
-
-```java
-// 선언 + 할당
-Queue<'자료형'> '이름' = new LinkedList<>();
-```
-
-- 큐. 연결리스트로 구현되어있고 인덱스로의 접근이 불가능하다. 
-
-### 메소드
-
-- `.add(값)` , `offer(값)` : 
-- `.poll()` : 첫 번째 값을 제거하고 반환 (pop)
-- `.remove()` : 첫 번째 값을 제거 
-- `.peek()` : 첫 번째 값을 출력(삭제 X)
-- `.clear()` : 큐 초기화 (모두 삭제)
-
-<br>
-
-## PriorityQueue
-
-### 기본
-
-```java
-// 우선순위가 낮은 숫자 순
-PriorityQueue<'자료형'> '이름' = new PriorityQueue<>();
-// 우선순위가 높은 숫자 순
-PriorityQueue<'자료형'> '이름' = new PriorityQueue<>(Collections.reverseOrder()));
-// 우선순위 직접 지정하기
-PriorityQueue<'자료형'> '이름' = new PriorityQueue<>(Comparator));
-```
-
-- 우선순위 큐 / 내부는 힙으로 구현되어 있다. (프린트 찍어보면 트리구조로 나옴)
-- `Queue` 컬렉션의 메소드와 동일하다.
-
-<br>
 
